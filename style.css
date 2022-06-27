@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #282828;
+}
+
+.drumkit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    /*height: calc(var(--vh, 1vh) * 100);*/
+}
+
+.pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1 0 calc(33.333% - 20px);
+    background: radial-gradient(#d85241, #c43623);
+    border-radius: 5px;
+}
+
+
+.pad:active {
+    background: radial-gradient(#e18174, #d15746);
+    transform: translateY(4px);
+}
+
+
+.pad img {
+    width: 150px;
+    pointer-events: none;
+    user-select: none;
+}
